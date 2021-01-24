@@ -1,0 +1,15 @@
+services:
+  squeak:
+    container_name: squeak
+    build:
+      context: .
+      args:
+        SSH_KEY: ${SSH_KEY}
+    volumes:
+      - "${SQUEAK_VM_DIR}:/bin/squeak:ro"
+      - "${SQUEAK_IMAGE_DIR}:/image:Z"
+    cap_add: [SYS_ADMIN]  # for mount statement in Dockerfile
+    ports:
+      - "2222:22"
+    stdin_open: true
+    tty: true

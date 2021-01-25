@@ -3,7 +3,7 @@
 Docker files and build scripts for compiling and running the [Squeak/Smalltalk](https://squeak.org/) OSVM on a Raspberry Pi.
 Headful access to the running Squeak image is possible using X-Forwarding via SSH.
 
-Customized for Raspi 4B+, but by adjusting the dependency architectures, you should be able to reuse the scripts for a different pi as well.
+Customized for Raspi 4B+ with Debian 10 64-bit, but by adjusting the architecture parameters for the dependencies, you should be able to reuse the scripts for a different pi as well.
 
 For some background this repository, you might want to read this thread: [OpenSmalltalk/opensmalltalk-vm#544](https://github.com/OpenSmalltalk/opensmalltalk-vm).
 Many thanks to all the helpful hints from the community!
